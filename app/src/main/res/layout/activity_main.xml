@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/tvStatus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Status: Disconnected"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:padding="8dp" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnScan"
+        android:textColor="@color/white"
+        android:background="@drawable/blue_fill_button_shape"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Scan for Devices" />
+
+    <ListView
+        android:id="@+id/lvDevices"
+        android:layout_width="match_parent"
+        android:background="@drawable/edit_text_blue"
+        android:layout_height="189dp"
+        android:divider="@android:color/darker_gray"
+        android:dividerHeight="1dp" />
+
+    <EditText
+        android:id="@+id/etMessage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter message" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnSend"
+        android:background="@drawable/edit_text_blue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Send Message"
+        android:enabled="false" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/rightbtn"
+        android:background="@color/date_color"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="SEND RIGHT" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/leftbtn"
+        android:background="@color/date_color"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="SEND LEFT" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/forwardbtn"
+        android:layout_width="match_parent"
+        android:background="@color/date_color"
+        android:layout_height="wrap_content"
+        android:text="SEND FORWARD" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/navbtn"
+        android:textColor="@color/white"
+        android:background="@drawable/blue_fill_button_shape"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="START NAVIGATION REALTIME" />
+</LinearLayout>
